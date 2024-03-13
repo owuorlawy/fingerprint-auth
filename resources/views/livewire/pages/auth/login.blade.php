@@ -69,4 +69,18 @@ new #[Layout('layouts.guest')] class extends Component
             </x-primary-button>
         </div>
     </form>
+    <!-- Add fingerprint collection -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.min.js"></script>
+    <script>
+        // Collect fingerprint
+        new Fingerprint2().get(function(result) {
+            var fingerprint = result;
+            // Add fingerprint to hidden input field
+            var fingerprintInput = document.createElement("input");
+            fingerprintInput.setAttribute("type", "hidden");
+            fingerprintInput.setAttribute("name", "fingerprint");
+            fingerprintInput.setAttribute("value", fingerprint);
+            document.querySelector("form").appendChild(fingerprintInput);
+        });
+    </script>
 </div>

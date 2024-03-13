@@ -12,6 +12,13 @@ use Livewire\Form;
 
 class LoginForm extends Form
 {
+    public $selectedMethod = 'password'; // Default login method
+
+    public function chooseMethod($method)
+    {
+        $this->selectedMethod = $method;
+    }
+    
     #[Validate('required|string|email')]
     public string $email = '';
 
