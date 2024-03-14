@@ -51,8 +51,13 @@ Update the .env file with your database credentials:
 
 Migrate the database:
 
-bash
-Copy code
-php artisan migrate
+    ```bash
+    php artisan migrate
+## Development Server
+To start a development server, run:
+    ```bash
+    php artisan serve
 ## Update Node packages
-Run npm install
+To update Node packages, run:
+    ```bash
+    npm install
