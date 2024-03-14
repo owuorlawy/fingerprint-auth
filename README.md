@@ -16,26 +16,32 @@ This guide will walk you through setting up a Laravel project from scratch.
 
    ```bash
    git clone <repository-url>
-## Navigate into the project directory:
+2. Navigate into the project directory:
 
+   ```bash
 cd <project-directory>
-## Install PHP dependencies:
 
-composer install
-Copy the .env.example file to .env:
+3. Install PHP dependencies:
 
-cp .env.example .env
-Generate an application key:
 
-php artisan key:generate
+   ```bash
+    composer install
+4. Copy the .env.example file to .env:
 
-Update the .env file with your database credentials.
+   ```bash
+    cp .env.example .env
+5. Generate an application key:
 
-Database Setup
+   ```bash
+    php artisan key:generate
+
+6. Update the .env file with your database credentials.
+## Database Setup
 Create a new database for your project.
 
 Update the .env file with your database credentials:
 
+```bash```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -45,16 +51,8 @@ DB_PASSWORD=your_database_password
 
 Migrate the database:
 
+bash
+Copy code
 php artisan migrate
-
-## Development Server
-To start a development server, run:
-
-php artisan serve
-
-Your application will be available at http://localhost:8000.
-
 ## Update Node packages
-Run 
-npm install
-npm run dev
+Run npm install
