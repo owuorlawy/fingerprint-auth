@@ -19,7 +19,7 @@ This guide will walk you through setting up a Laravel project from scratch.
 2. Navigate into the project directory:
 
    ```bash
-cd <project-directory>
+    cd <project-directory>
 
 3. Install PHP dependencies:
 
@@ -41,13 +41,13 @@ Create a new database for your project.
 
 Update the .env file with your database credentials:
 
-```bash```
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=your_database_name
-DB_USERNAME=your_database_username
-DB_PASSWORD=your_database_password
+    ```bash
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=your_database_name
+    DB_USERNAME=your_database_username
+    DB_PASSWORD=your_database_password
 
 Migrate the database:
 
